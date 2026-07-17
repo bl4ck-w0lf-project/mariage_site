@@ -1,75 +1,437 @@
-# React + TypeScript + Vite
+#  Wedding Agency - Premium Wedding Showcase Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)
 
-## React Compiler
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript\&logoColor=white)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite\&logoColor=white)
 
-## Expanding the ESLint configuration
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38BDF8?logo=tailwindcss\&logoColor=white)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+![License](https://img.shields.io/badge/License-MIT-green)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📖 À propos
+
+
+
+**Wedding Agency** est un site vitrine moderne conçu pour une agence spécialisée dans l'organisation de mariages.
+
+
+
+L'objectif est de proposer une expérience utilisateur haut de gamme grâce à un design élégant, des animations fluides et un excellent copywriting afin de convertir les visiteurs en futurs clients.
+
+
+
+Le développement est réalisé progressivement à partir de maquettes UI intégrées section par section.
+
+
+
+---
+
+
+
+# ✨ Fonctionnalités
+
+
+
+* Hero moderne
+
+* Présentation de l'agence
+
+* Services proposés
+
+* Galerie de réalisations
+
+* Avis clients
+
+* Formulaire de contact
+
+* Responsive Design
+
+* Animations fluides
+
+* Interface premium
+
+* Optimisation des performances
+
+* Accessibilité
+
+
+
+---
+
+
+
+# 🛠️ Technologies
+
+
+
+* React.js
+
+* TypeScript
+
+* Vite
+
+* Tailwind CSS
+
+* Lucide React
+
+* SVG
+
+
+
+---
+
+
+
+# 📂 Structure du projet
+
+
+
+```text
+
+wedding-site/
+
+│
+
+├── public/
+
+│   ├── favicon.svg
+
+│   └── icons.svg
+
+│
+
+├── src/
+
+│   ├── assets/
+
+│   │   ├── hero.png
+
+│   │   ├── react.svg
+
+│   │   └── vite.svg
+
+│   │
+
+│   ├── App.tsx
+
+│   ├── App.css
+
+│   ├── index.css
+
+│   └── main.tsx
+
+│
+
+├── eslint.config.js
+
+├── package.json
+
+├── tsconfig.json
+
+├── tsconfig.app.json
+
+├── tsconfig.node.json
+
+├── vite.config.ts
+
+└── README.md
 
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+
+
+# 📁 Description des dossiers
+
+
+
+## public/
+
+
+
+Contient les ressources accessibles directement depuis le navigateur.
+
+
+
+* favicon
+
+* icônes
+
+* fichiers statiques
+
+
+
+---
+
+
+
+## src/
+
+
+
+Contient tout le code source de l'application.
+
+
+
+### assets/
+
+
+
+Regroupe les ressources utilisées dans le projet :
+
+
+
+* images
+
+* illustrations
+
+* SVG
+
+* icônes
+
+
+
+### App.tsx
+
+
+
+Composant principal de l'application.
+
+
+
+Il assemble progressivement toutes les sections du site.
+
+
+
+### App.css
+
+
+
+Styles spécifiques au composant principal.
+
+
+
+### index.css
+
+
+
+Styles globaux de l'application ainsi que l'import de Tailwind CSS.
+
+
+
+### main.tsx
+
+
+
+Point d'entrée de l'application React.
+
+
+
+Il monte l'application dans le DOM.
+
+
+
+---
+
+
+
+# 🚀 Installation
+
+
+
+```bash
+
+git clone https://github.com/bl4ck-w0lf-project/mariage_site.git
+
+
+
+cd mariage_site
+
+
+
+npm install
 
 ```
+
+
+
+---
+
+
+
+# ▶️ Lancer le projet
+
+
+
+```bash
+
+npm run dev
+
+```
+
+
+
+L'application sera disponible sur :
+
+
+
+```text
+
+http://localhost:5173
+
+```
+
+
+
+---
+
+
+
+# 📦 Build de production
+
+
+
+```bash
+
+npm run build
+
+```
+
+
+
+---
+
+
+
+# 🔍 Prévisualiser le build
+
+
+
+```bash
+
+npm run preview
+
+```
+
+
+
+---
+
+
+
+# 🧹 Vérification ESLint
+
+
+
+```bash
+
+npm run lint
+
+```
+
+
+
+---
+
+
+
+# 🎯 Objectifs
+
+
+
+* Créer une expérience premium.
+
+* Développer une interface moderne et élégante.
+
+* Garantir une excellente expérience utilisateur.
+
+* Optimiser les performances.
+
+* Respecter les bonnes pratiques React et TypeScript.
+
+* Produire un code maintenable et évolutif.
+
+
+
+---
+
+
+
+# 📱 Responsive Design
+
+
+
+Le site est entièrement optimisé pour :
+
+
+
+* 📱 Mobile
+
+* 📲 Tablette
+
+* 💻 Desktop
+
+* 🖥️ Grands écrans
+
+
+
+---
+
+
+
+# ♿ Accessibilité
+
+
+
+Le projet respecte les bonnes pratiques d'accessibilité :
+
+
+
+* HTML sémantique
+
+* Navigation clavier
+
+* Contrastes adaptés
+
+* Attributs ARIA lorsque nécessaire
+
+
+
+---
+
+
+
+
+
+
+
+---
+
+
+
+---
+
+
+
+
+
+
+
+# 👨‍💻 Auteurs
+
+
+
+Développé par **Ricardo Angelo HOUNMENOU**.
+
+
+
+GitHub : https://github.com/bl4ck-w0lf-project
