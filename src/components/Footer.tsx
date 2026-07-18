@@ -178,7 +178,7 @@ const Footer = () => {
           <p className="text-sm font-light flex items-center gap-1">
             Fait par
             <a
-              href="#"
+              href="everafterevents.vercel.app"
               className="text-rose-500 hover:text-rose-400 transition-colors font-medium"
             >
               SmartDev
