@@ -103,11 +103,6 @@ wedding-site/
 ├── package-lock.json
 ├── postcss.config.js
 ├── public
-│   └── logo-wedding.png
-├── README.md
-├── src
-│   ├── App.css
-│   ├── App.tsx
 │   ├── assets
 │   │   ├── about.jpeg
 │   │   ├── gallery
@@ -116,6 +111,12 @@ wedding-site/
 │   │   ├── icon.png
 │   │   ├── logo-wedding.png
 │   │   └── testimonial-1.jpeg
+│   ├── llms.txt
+│   └── logo-wedding.png
+├── README.md
+├── src
+│   ├── App.css
+│   ├── App.tsx
 │   ├── components
 │   │   ├── About.tsx
 │   │   ├── Contact.tsx

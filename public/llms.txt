@@ -1,115 +1,82 @@
-# Joyfull Wedding
+# Joyfull Wedding — Site vitrine premium
+> Site vitrine développé pour une agence spécialisée dans l'organisation de mariages. Présente les services, inspire confiance, valorise les réalisations et pousse à la prise de contact. Construit avec React, TypeScript et Tailwind CSS.
 
-## Project
+Joyfull Wedding est pensé comme un produit digital premium : interface élégante, minimaliste, animations soignées, UX irréprochable. L'objectif n'est pas seulement de montrer un savoir-faire, mais de convertir chaque visite en demande de contact. 7 sections, architecture propre en composants réutilisables, 100% responsive et mobile-first.
 
-Joyfull Wedding est un site vitrine premium développé pour une agence spécialisée dans l'organisation de mariages.
-
-L'objectif est de présenter les services de l'agence, inspirer confiance, valoriser les réalisations et inciter les visiteurs à prendre contact.
-
----
-
-## Tech Stack
-
-- React.js
-- TypeScript
-- Vite
-- Tailwind CSS
-- Lucide React
-- Responsive Design
-- Mobile First
-
----
-
-## Design Principles
-
-- Premium UI
-- Elegant
-- Minimalist
-- Luxury
-- Smooth Animations
-- High Conversion
-- Excellent UX
-- Accessibility
-- Performance
+**Stack** : React.js, TypeScript, Vite, Tailwind CSS, Lucide React.
 
 ---
 
 ## Sections
+- **Hero** : première impression, message fort, appel à l'action immédiat.
+- **About** : présentation de l'agence, valeurs, expérience.
+- **Services** : offres détaillées, présentation claire des prestations.
+- **Gallery** : réalisations en images, mise en valeur visuelle du travail.
+- **Testimonials** : avis clients, preuve sociale, renforcement de la confiance.
+- **Contact** : formulaire de prise de contact, coordonnées, disponibilité.
+- **Footer** : navigation secondaire, réseaux sociaux, newsletter.
 
-1. Hero
-2. About
-3. Services
-4. Gallery
-5. Testimonials
-6. Contact
-7. Footer
+## Architecture
+```
+.
+├── eslint.config.js
+├── .gitignore
+├── index.html
+├── package.json
+├── package-lock.json
+├── postcss.config.js
+├── public
+│   ├── assets
+│   │   ├── about.jpeg
+│   │   ├── gallery
+│   │   │   └── 1.jpeg
+│   │   ├── hero.jpg
+│   │   ├── icon.png
+│   │   ├── logo-wedding.png
+│   │   └── testimonial-1.jpeg
+│   ├── llms.txt
+│   └── logo-wedding.png
+├── README.md
+├── src
+│   ├── App.css
+│   ├── App.tsx
+│   ├── components
+│   │   ├── About.tsx
+│   │   ├── Contact.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Gallery.tsx
+│   │   ├── Hero.tsx
+│   │   ├── Navbar.tsx
+│   │   ├── Services.tsx
+│   │   └── Testimonials.tsx
+│   ├── index.css
+│   └── main.tsx
+├── tailwind.config.js
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.ts
 
----
+```
 
-## Components
+## Principes de design
+- Premium & élégant
+- Minimaliste
+- Animations fluides et discrètes
+- Hiérarchie visuelle claire
+- Espacement cohérent
+- Typographie premium
+- Accessibilité prise en compte
+- Orienté conversion (high conversion, excellente UX)
 
-src/components/
+## Bonnes pratiques de code
+- Composants fonctionnels uniquement
+- TypeScript strict
+- Composants réutilisables et architecture propre
+- HTML sémantique, UI accessible
+- Performance optimisée
+- Aucun framework UI hors Tailwind CSS
+- Icônes via Lucide React, illustrations custom en SVG
 
-- Navbar.tsx
-- Hero.tsx
-- About.tsx
-- Services.tsx
-- Gallery.tsx
-- Testimonials.tsx
-- Contact.tsx
-- Footer.tsx
-
----
-
-## Assets
-
-Images are located inside:
-
-public/assets/
-
-including:
-
-- hero
-- about
-- gallery
-- testimonials
-- logo
-- icons
-
----
-
-## Coding Guidelines
-
-- Functional Components
-- Strict TypeScript
-- Reusable Components
-- Clean Architecture
-- Maintainable Code
-- Semantic HTML
-- Accessible UI
-- Optimized Performance
-- No UI Framework except Tailwind CSS
-- Lucide React for icons
-- SVG for custom illustrations
-
----
-
-## UI/UX
-
-Every section must:
-
-- be responsive
-- have smooth transitions
-- respect visual hierarchy
-- maintain consistent spacing
-- use premium typography
-- include subtle animations
-- keep accessibility in mind
-
----
-
-## Objective
-
-Create a premium wedding agency website that inspires elegance, emotion, trust and maximizes contact requests.
-
-The project follows modern React best practices and focuses on performance, scalability and maintainability.
+## Objectif
+Créer un site premium pour une agence de mariage qui inspire élégance, émotion et confiance, tout en maximisant les demandes de contact — dans le respect des bonnes pratiques modernes React (performance, scalabilité, maintenabilité).
