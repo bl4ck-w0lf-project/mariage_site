@@ -2,12 +2,12 @@ import { Heart, ArrowRight } from 'lucide-react';
 
 const About = () => {
   return (
-    <section id="about" className="py-28 px-4 bg-gradient-to-b from-white to-rose-50/30">
+    <section id="about" className="py-16 sm:py-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-rose-50/30 overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-20 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image avec badges */}
           <div className="relative">
-            <div className="aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl shadow-rose-500/10 relative h-[600px] lg:h-[700px]">
+            <div className="aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl shadow-rose-500/10 relative h-[450px] sm:h-[550px] lg:h-[700px]">
               <img
                 src="/assets/about.jpeg"
                 alt="Équipe de JoyfullWedding"
@@ -17,27 +17,27 @@ const About = () => {
             </div>
 
             {/* Badge en haut à gauche - SUR l'image */}
-            <div className="absolute top-[-22px] left-[-35px] bg-white/90 backdrop-blur-sm px-5 py-3 rounded-xl shadow-lg border border-white/50">
-              <span className="font-serif italic text-rose-500 text-base tracking-wide">
+            <div className="absolute top-[-15px] left-[-15px] sm:top-[-22px] sm:left-[-35px] bg-white/90 backdrop-blur-sm px-3 py-2 sm:px-5 sm:py-3 rounded-xl shadow-lg border border-white/50">
+              <span className="font-serif italic text-rose-500 text-xs sm:text-base tracking-wide">
                 « L'art du détail »
               </span>
             </div>
 
             {/* Badge en bas à droite - SUR l'image */}
-            <div className="absolute bottom-[-35px] right-[15px] bg-white/95 backdrop-blur-sm p-5 rounded-2xl shadow-xl border border-gray-100/50 min-w-[160px]">
-              <div className="flex items-center gap-4">
+            <div className="absolute bottom-[-15px] right-[10px] sm:bottom-[-35px] sm:right-[15px] bg-white/95 backdrop-blur-sm p-3 sm:p-5 rounded-2xl shadow-xl border border-gray-100/50 min-w-[120px] sm:min-w-[160px]">
+              <div className="flex items-center gap-3 sm:gap-4">
                 <div className="relative">
-                  <div className="w-14 h-14 bg-gradient-to-br from-rose-100 to-rose-50 rounded-2xl flex items-center justify-center shadow-inner">
-                    <Heart className="w-7 h-7 text-rose-500 fill-rose-500/20" />
+                  <div className="w-10 h-10 sm:w-14 sm:h-14 bg-gradient-to-br from-rose-100 to-rose-50 rounded-2xl flex items-center justify-center shadow-inner">
+                    <Heart className="w-5 h-5 sm:w-7 sm:h-7 text-rose-500 fill-rose-500/20" />
                   </div>
-                  <div className="absolute -top-1 -right-1 w-4 h-4 bg-rose-500 rounded-full opacity-20"></div>
+                  <div className="absolute -top-1 -right-1 w-3 h-3 sm:w-4 sm:h-4 bg-rose-500 rounded-full opacity-20"></div>
                 </div>
                 <div>
-                  <div className="text-2xl font-semibold text-gray-900 leading-none">98%</div>
-                  <div className="text-sm text-gray-500 font-light tracking-wide">Clients satisfaits</div>
+                  <div className="text-xl sm:text-2xl font-semibold text-gray-900 leading-none">98%</div>
+                  <div className="text-xs sm:text-sm text-gray-500 font-light tracking-wide">Clients satisfaits</div>
                   <div className="flex gap-0.5 mt-1">
                     {[...Array(5)].map((_, i) => (
-                      <span key={i} className="text-amber-400 text-xs">★</span>
+                      <span key={i} className="text-amber-400 text-[10px] sm:text-xs">★</span>
                     ))}
                   </div>
                 </div>
@@ -46,26 +46,26 @@ const About = () => {
           </div>
 
           {/* Contenu droit */}
-          <div className="space-y-10">
-            <div className="space-y-6">
-              {/* Label Notre Mission - Style identique à Services */}
+          <div className="space-y-8 sm:space-y-10">
+            <div className="space-y-4 sm:space-y-6">
+              {/* Label Notre Mission */}
               <span className="text-rose-500 font-medium tracking-[0.2em] uppercase text-sm flex items-center gap-3">
                 <span className="text-rose-500 text-lg">✦</span>
                 Notre Mission
                 <span className="text-rose-500 text-lg">✦</span>
               </span>
 
-              {/* Titre - Style identique à Services */}
-              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-outfit font-bold tracking-tight leading-tight">
+              {/* Titre */}
+              <h2 className="text-3xl sm:text-4xl lg:text-6xl font-outfit font-bold tracking-tight leading-tight">
                 Inspirer la confiance,
                 <span className="block font-serif text-rose-500 mt-2">créer du rêve.</span>
               </h2>
 
-              <div className="space-y-4 text-gray-600">
-                <p className="text-lg leading-relaxed font-light">
+              <div className="space-y-3 sm:space-y-4 text-gray-600">
+                <p className="text-base sm:text-lg leading-relaxed font-light">
                   Chez <span className="font-semibold text-rose-500">JoyfullWedding</span>, nous croyons que chaque mariage est une œuvre d'art unique. Notre approche allie le raffinement de la haute couture à une logistique impeccable.
                 </p>
-                <p className="text-lg leading-relaxed font-light">
+                <p className="text-base sm:text-lg leading-relaxed font-light">
                   Nous ne nous contentons pas de planifier des événements ; nous créons des souvenirs qui traversent le temps. Notre équipe dédiée s'occupe de chaque aspect technique pour vous permettre de vivre pleinement chaque instant de votre union.
                 </p>
               </div>
@@ -81,17 +81,17 @@ const About = () => {
               </div>
             </div>
 
-            <div className="flex flex-wrap gap-4 pt-4">
+            <div className="flex flex-wrap gap-3 sm:gap-4 pt-2">
               <a
                 href="#gallery"
-                className="group px-8 py-4 bg-rose-500 text-white rounded-xl font-medium hover:bg-rose-600 transition-all duration-300 hover:shadow-xl hover:shadow-rose-500/25 flex items-center gap-2"
+                className="group px-6 sm:px-8 py-3 sm:py-4 bg-rose-500 text-white rounded-xl font-medium hover:bg-rose-600 transition-all duration-300 hover:shadow-xl hover:shadow-rose-500/25 flex items-center gap-2 text-sm sm:text-base"
               >
                 <span>Voir la galerie</span>
-                <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-300 group-hover:translate-x-1" />
               </a>
               <a
                 href="#services"
-                className="px-8 py-4 border-2 border-rose-500 text-rose-500 rounded-xl font-medium hover:bg-rose-500 hover:text-white transition-all duration-300 hover:shadow-xl hover:shadow-rose-500/25"
+                className="px-6 sm:px-8 py-3 sm:py-4 border-2 border-rose-500 text-rose-500 rounded-xl font-medium hover:bg-rose-500 hover:text-white transition-all duration-300 hover:shadow-xl hover:shadow-rose-500/25 text-sm sm:text-base"
               >
                 Nos services
               </a>
