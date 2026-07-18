@@ -3,41 +3,43 @@ import { Sparkles, Camera, Flower2, Music, UtensilsCrossed, MapPin, MessageCircl
 const Services = () => {
   const services = [
     {
+      icon: MapPin,
+      title: 'Lieux d\'Exception',
+      description: 'Des sites prestigieux sélectionnés pour leur beauté et leur charme.',
+      number: '01',
+      isFeatured: true
+      
+    },
+    {
       icon: Sparkles,
       title: 'Design & Décoration',
       description: 'Une scénographie unique qui reflète votre personnalité et vos goûts.',
-      number: '01'
+      number: '02',
+     
     },
     {
       icon: Camera,
       title: 'Photographie & Vidéo',
       description: 'Capturez chaque instant précieux avec nos experts en imagerie.',
-      number: '02'
+      number: '03'
     },
     {
       icon: Flower2,
       title: 'Fleurs & Bouquets',
       description: 'Des compositions florales élégantes et raffinées pour sublimer votre jour.',
-      number: '03'
+      number: '04'
     },
     {
       icon: Music,
       title: 'Animation Musicale',
       description: 'Une ambiance sonore parfaite pour faire danser vos invités.',
-      number: '04'
+      number: '05'
     },
     {
       icon: UtensilsCrossed,
       title: 'Traiteur Gastronomique',
       description: 'Un voyage culinaire d\'exception pour émerveiller vos convives.',
-      number: '05'
-    },
-    {
-      icon: MapPin,
-      title: 'Lieux d\'Exception',
-      description: 'Des sites prestigieux sélectionnés pour leur beauté et leur charme.',
-      number: '06',
-      isFeatured: true
+      number: '06'
     }
   ];
 
