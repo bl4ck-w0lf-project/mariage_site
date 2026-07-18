@@ -53,21 +53,21 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12 items-start">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="flex flex-col">
-            <div className="flex items-center gap-2 mb-6 h-12">
+            <div className="flex items-center gap-2 mb-6">
               <img
-                src="/src/assets/logo-wedding.png"
+                src="/logo-wedding.png"
                 alt="Wedding Agency"
-                className="w-12 h-12 object-contain rounded-xl"
+                className="w-auto h-20 object-contain rounded-xl"
               />
               <span className="text-2xl font-light tracking-tight text-white leading-none">
                 <span className="font-serif text-rose-500">JoyFull</span>
                 <span className="text-white">Wedding</span>
               </span>
             </div>
-            <p className="text-sm leading-relaxed font-light">
+            <p className="text-sm leading-relaxed font-light flex-1">
               L'art de créer des moments inoubliables. Depuis plus de 12 ans,
               nous orchestrons les plus beaux jours de votre vie.
             </p>
@@ -87,8 +87,8 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="flex flex-col">
-            <h3 className="text-white font-semibold mb-6 h-12 flex items-center">Navigation</h3>
-            <ul className="space-y-3">
+            <h3 className="text-white font-semibold mb-6">Navigation</h3>
+            <ul className="space-y-3 flex-1">
               {quickLinks.map((link) => (
                 <li key={link.label}>
                   <a
@@ -104,8 +104,8 @@ const Footer = () => {
 
           {/* Horaires */}
           <div className="flex flex-col">
-            <h3 className="text-white font-semibold mb-6 h-12 flex items-center">Horaires</h3>
-            <ul className="space-y-4">
+            <h3 className="text-white font-semibold mb-6">Horaires</h3>
+            <ul className="space-y-4 flex-1">
               <li className="flex items-start gap-3">
                 <Clock className="w-5 h-5 text-rose-500 mt-0.5 flex-shrink-0" />
                 <div>
@@ -132,8 +132,8 @@ const Footer = () => {
 
           {/* Contact & Newsletter */}
           <div className="flex flex-col">
-            <h3 className="text-white font-semibold mb-6 h-12 flex items-center">Contact</h3>
-            <ul className="space-y-4">
+            <h3 className="text-white font-semibold mb-6">Contact</h3>
+            <ul className="space-y-4 flex-1">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-rose-500 mt-0.5 flex-shrink-0" />
                 <span className="text-sm font-light">Porto-Novo, Bénin</span>
@@ -148,7 +148,7 @@ const Footer = () => {
               </li>
             </ul>
 
-            <div className="mt-8">
+            <div className="mt-6">
               <h4 className="text-white font-semibold mb-4">Newsletter</h4>
               <p className="text-sm font-light mb-4">
                 Recevez nos inspirations et conseils pour votre mariage.
@@ -171,7 +171,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
+        <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-sm font-light">
             © {currentYear} Wedding Agency. Tous droits réservés.
           </p>

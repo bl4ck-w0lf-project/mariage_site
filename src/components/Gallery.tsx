@@ -7,7 +7,7 @@ const Gallery = () => {
     [
       { id: 1, category: 'Cérémonie', label: 'Échange de voeux', src: '/assets/gallery/1.jpeg' },
       { id: 2, category: 'Décoration', label: 'Table d\'honneur', src: '/assets/gallery/1.jpeg' },
-      { id: 3, category: 'Couple', label: 'Séance photo', src: '/src/assets/gallery/1.jpeg' },
+      { id: 3, category: 'Couple', label: 'Séance photo', src: '/assets/gallery/1.jpeg' },
       { id: 4, category: 'Fleurs', label: 'Bouquet de mariée', src: '/assets/gallery/1.jpeg' },
       { id: 5, category: 'Lieu', label: 'Salle de réception', src: '/assets/gallery/1.jpeg' },
       { id: 6, category: 'Gastronomie', label: 'Dîner de gala', src: '/assets/gallery/1.jpeg' },
@@ -32,7 +32,7 @@ const Gallery = () => {
       { id: 5, category: 'Lieu', label: 'Salle de réception', src: '/assets/gallery/1.jpeg' },
       { id: 4, category: 'Fleurs', label: 'Bouquet de mariée', src: '/assets/gallery/1.jpeg' },
       { id: 3, category: 'Couple', label: 'Séance photo', src: '/assets/gallery/1.jpeg' },
-      { id: 2, category: 'Décoration', label: 'Table d\'honneur', src: '/assets/gallery/1.jpegg' },
+      { id: 2, category: 'Décoration', label: 'Table d\'honneur', src: '/assets/gallery/1.jpeg' },
       { id: 1, category: 'Cérémonie', label: 'Échange de voeux', src: '/assets/gallery/1.jpeg' },
     ],
     // Colonne 3 - Du haut vers le bas (comme colonne 1 mais décalée)
@@ -74,7 +74,11 @@ const Gallery = () => {
         {/* Colonnes d'images avec défilement continu */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-6xl mx-auto">
           {/* Colonne 1 - Défile vers le bas */}
-          <div className="relative overflow-hidden rounded-2xl h-[700px]">
+          <div className="relative overflow-hidden rounded-2xl h-[700px] shadow-xl shadow-rose-500/5">
+            {/* Overlay dégradé en haut */}
+            <div className="absolute top-0 left-0 right-0 z-10 h-24 bg-gradient-to-b from-white/80 to-transparent pointer-events-none"></div>
+            {/* Overlay dégradé en bas */}
+            <div className="absolute bottom-0 left-0 right-0 z-10 h-24 bg-gradient-to-t from-white/80 to-transparent pointer-events-none"></div>
             <div className="absolute inset-0 flex flex-col gap-4 animate-scroll-down">
               {columnImages[0].map((image, idx) => (
                 <div key={`col1-${idx}`} className="relative aspect-[3/4] rounded-xl overflow-hidden flex-shrink-0 group cursor-pointer">
@@ -101,7 +105,11 @@ const Gallery = () => {
           </div>
 
           {/* Colonne 2 - Défile vers le haut */}
-          <div className="relative overflow-hidden rounded-2xl h-[700px]">
+          <div className="relative overflow-hidden rounded-2xl h-[700px] shadow-xl shadow-rose-500/5">
+            {/* Overlay dégradé en haut */}
+            <div className="absolute top-0 left-0 right-0 z-10 h-24 bg-gradient-to-b from-white/80 to-transparent pointer-events-none"></div>
+            {/* Overlay dégradé en bas */}
+            <div className="absolute bottom-0 left-0 right-0 z-10 h-24 bg-gradient-to-t from-white/80 to-transparent pointer-events-none"></div>
             <div className="absolute inset-0 flex flex-col gap-4 animate-scroll-up">
               {columnImages[1].map((image, idx) => (
                 <div key={`col2-${idx}`} className="relative aspect-[3/4] rounded-xl overflow-hidden flex-shrink-0 group cursor-pointer">
@@ -128,7 +136,11 @@ const Gallery = () => {
           </div>
 
           {/* Colonne 3 - Défile vers le bas (décalé) */}
-          <div className="relative overflow-hidden rounded-2xl h-[700px]">
+          <div className="relative overflow-hidden rounded-2xl h-[700px] shadow-xl shadow-rose-500/5">
+            {/* Overlay dégradé en haut */}
+            <div className="absolute top-0 left-0 right-0 z-10 h-24 bg-gradient-to-b from-white/80 to-transparent pointer-events-none"></div>
+            {/* Overlay dégradé en bas */}
+            <div className="absolute bottom-0 left-0 right-0 z-10 h-24 bg-gradient-to-t from-white/80 to-transparent pointer-events-none"></div>
             <div className="absolute inset-0 flex flex-col gap-4 animate-scroll-down-delayed">
               {columnImages[2].map((image, idx) => (
                 <div key={`col3-${idx}`} className="relative aspect-[3/4] rounded-xl overflow-hidden flex-shrink-0 group cursor-pointer">

@@ -68,8 +68,13 @@ const Testimonials = () => {
         </div>
 
         {/* Rangée 1 - De gauche à droite */}
-        <div className="relative overflow-hidden mb-6">
-          <div className="flex gap-6 animate-scroll-left">
+        <div className="relative overflow-hidden mb-6 rounded-3xl shadow-xl shadow-rose-500/5">
+          {/* Overlay dégradé gauche */}
+          <div className="absolute left-0 top-0 z-10 w-24 h-full bg-gradient-to-r from-white to-transparent pointer-events-none"></div>
+          {/* Overlay dégradé droite */}
+          <div className="absolute right-0 top-0 z-10 w-24 h-full bg-gradient-to-l from-white to-transparent pointer-events-none"></div>
+          
+          <div className="flex gap-6 animate-scroll-left py-4">
             {duplicatedTestimonials.map((testimonial, idx) => (
               <div
                 key={`row1-${idx}`}
@@ -104,8 +109,13 @@ const Testimonials = () => {
         </div>
 
         {/* Rangée 2 - De droite à gauche */}
-        <div className="relative overflow-hidden">
-          <div className="flex gap-6 animate-scroll-right">
+        <div className="relative overflow-hidden rounded-3xl shadow-xl shadow-rose-500/5">
+          {/* Overlay dégradé gauche */}
+          <div className="absolute left-0 top-0 z-10 w-24 h-full bg-gradient-to-r from-white to-transparent pointer-events-none"></div>
+          {/* Overlay dégradé droite */}
+          <div className="absolute right-0 top-0 z-10 w-24 h-full bg-gradient-to-l from-white to-transparent pointer-events-none"></div>
+          
+          <div className="flex gap-6 animate-scroll-right py-4">
             {duplicatedTestimonials.map((testimonial, idx) => (
               <div
                 key={`row2-${idx}`}
@@ -161,12 +171,12 @@ const Testimonials = () => {
         }
 
         .animate-scroll-left {
-          animation: scrollLeft 35s linear infinite;
+          animation: scrollLeft 80s linear infinite;
           will-change: transform;
         }
 
         .animate-scroll-right {
-          animation: scrollRight 40s linear infinite;
+          animation: scrollRight 50s linear infinite;
           will-change: transform;
         }
 
