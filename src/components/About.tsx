@@ -9,7 +9,7 @@ const About = () => {
           <div className="relative">
             <div className="aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl shadow-rose-500/10 relative h-[600px] lg:h-[700px]">
               <img
-                src="/src/assets/about.jpeg"
+                src="/assets/about.jpeg"
                 alt="Équipe de JoyfullWedding"
                 className="w-full h-full object-cover"
                 loading="lazy"

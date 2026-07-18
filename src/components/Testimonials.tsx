@@ -7,42 +7,42 @@ const Testimonials = () => {
       date: 'Juillet 2026',
       comment: 'Une équipe exceptionnelle qui a su transformer nos rêves en réalité. Chaque détail était parfait, nous avons vécu le plus beau jour de notre vie.',
       rating: 5,
-      image: '/src/assets/testimonial-1.jpeg'
+      image: '/assets/testimonial-1.jpeg'
     },
     {
       name: 'Emma & Lucas',
       date: 'Juin 2026',
       comment: 'Un professionnalisme et une élégance remarquables. Nous avons été accompagnés avec douceur et bienveillance tout au long de cette aventure.',
       rating: 5,
-      image: '/src/assets/testimonial-1.jpeg'
+      image: '/assets/testimonial-1.jpeg'
     },
     {
       name: 'Marie & Antoine',
       date: 'Mai 2026',
       comment: 'La meilleure décision que nous ayons prise ! Notre mariage était tout simplement magique, nos invités en parlent encore.',
       rating: 5,
-      image: '/src/assets/testimonial-1.jpeg'
+      image: '/assets/testimonial-1.jpeg'
     },
     {
       name: 'Julie & Marc',
       date: 'Avril 2026',
       comment: 'Une organisation sans faille et une équipe à l\'écoute. Ils ont su capturer l\'essence de notre amour dans chaque détail.',
       rating: 5,
-      image: '/src/assets/testimonial-1.jpeg'
+      image: '/assets/testimonial-1.jpeg'
     },
     {
       name: 'Claire & Nicolas',
       date: 'Mars 2026',
       comment: 'Un véritable coup de cœur pour cette agence. Leur créativité et leur professionnalisme ont fait de notre mariage un conte de fées.',
       rating: 5,
-      image: '/src/assets/testimonial-1.jpeg'
+      image: '/assets/testimonial-1.jpeg'
     },
     {
       name: 'Laura & Pierre',
       date: 'Février 2026',
       comment: 'Ils ont su créer une atmosphère unique et chaleureuse. Nos invités ont été bluffés par la qualité de l\'organisation.',
       rating: 5,
-      image: '/src/assets/testimonial-1.jpeg'
+      image: '/assets/testimonial-1.jpeg'
     },
   ];
 
