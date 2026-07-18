@@ -5,16 +5,16 @@ const Gallery = () => {
   const columnImages = [
     // Colonne 1 - Du haut vers le bas
     [
-      { id: 1, category: 'Cérémonie', label: 'Échange de voeux', src: '/assets/gallery/1.jpeg' },
-      { id: 2, category: 'Décoration', label: 'Table d\'honneur', src: '/assets/gallery/1.jpeg' },
-      { id: 3, category: 'Couple', label: 'Séance photo', src: '/assets/gallery/1.jpeg' },
-      { id: 4, category: 'Fleurs', label: 'Bouquet de mariée', src: '/assets/gallery/1.jpeg' },
-      { id: 5, category: 'Lieu', label: 'Salle de réception', src: '/assets/gallery/1.jpeg' },
-      { id: 6, category: 'Gastronomie', label: 'Dîner de gala', src: '/assets/gallery/1.jpeg' },
+      { id: 1, category: 'Cérémonie', label: 'Échange de voeux', src: '/assets/gallery/3.jpeg' },
+      { id: 2, category: 'Décoration', label: 'Table d\'honneur', src: '/assets/gallery/2.jpeg' },
+      { id: 3, category: 'Couple', label: 'Séance photo', src: '/assets/gallery/5.jpeg' },
+      { id: 4, category: 'Fleurs', label: 'Bouquet de mariée', src: '/assets/gallery/4.jpeg' },
+      { id: 5, category: 'Lieu', label: 'Salle de réception', src: '/assets/gallery/3.jpeg' },
+      { id: 6, category: 'Gastronomie', label: 'Dîner de gala', src: '/assets/gallery/4.jpeg' },
       // Duplication pour la boucle infinie
       { id: 1, category: 'Cérémonie', label: 'Échange de voeux', src: '/assets/gallery/1.jpeg' },
-      { id: 2, category: 'Décoration', label: 'Table d\'honneur', src: '/assets/gallery/1.jpeg' },
-      { id: 3, category: 'Couple', label: 'Séance photo', src: '/assets/gallery/1.jpeg' },
+      { id: 2, category: 'Décoration', label: 'Table d\'honneur', src: '/assets/gallery/2.jpeg' },
+      { id: 3, category: 'Couple', label: 'Séance photo', src: '/assets/gallery/5.jpeg' },
       { id: 4, category: 'Fleurs', label: 'Bouquet de mariée', src: '/assets/gallery/1.jpeg' },
       { id: 5, category: 'Lieu', label: 'Salle de réception', src: '/assets/gallery/1.jpeg' },
       { id: 6, category: 'Gastronomie', label: 'Dîner de gala', src: '/assets/gallery/1.jpeg' },
@@ -22,29 +22,29 @@ const Gallery = () => {
     // Colonne 2 - Du bas vers le haut (ordre inversé)
     [
       { id: 6, category: 'Gastronomie', label: 'Dîner de gala', src: '/assets/gallery/1.jpeg' },
-      { id: 5, category: 'Lieu', label: 'Salle de réception', src: '/assets/gallery/1.jpeg' },
+      { id: 5, category: 'Lieu', label: 'Salle de réception', src: '/assets/gallery/4.jpeg' },
       { id: 4, category: 'Fleurs', label: 'Bouquet de mariée', src: '/assets/gallery/1.jpeg' },
-      { id: 3, category: 'Couple', label: 'Séance photo', src: '/assets/gallery/1.jpeg' },
-      { id: 2, category: 'Décoration', label: 'Table d\'honneur', src: '/assets/gallery/1.jpeg' },
+      { id: 3, category: 'Couple', label: 'Séance photo', src: '/assets/gallery/5.jpeg' },
+      { id: 2, category: 'Décoration', label: 'Table d\'honneur', src: '/assets/gallery/3.jpeg' },
       { id: 1, category: 'Cérémonie', label: 'Échange de voeux', src: '/assets/gallery/1.jpeg' },
       // Duplication pour la boucle infinie
       { id: 6, category: 'Gastronomie', label: 'Dîner de gala', src: '/assets/gallery/1.jpeg' },
-      { id: 5, category: 'Lieu', label: 'Salle de réception', src: '/assets/gallery/1.jpeg' },
-      { id: 4, category: 'Fleurs', label: 'Bouquet de mariée', src: '/assets/gallery/1.jpeg' },
-      { id: 3, category: 'Couple', label: 'Séance photo', src: '/assets/gallery/1.jpeg' },
+      { id: 5, category: 'Lieu', label: 'Salle de réception', src: '/assets/gallery/3.jpeg' },
+      { id: 4, category: 'Fleurs', label: 'Bouquet de mariée', src: '/assets/gallery/4.jpeg' },
+      { id: 3, category: 'Couple', label: 'Séance photo', src: '/assets/gallery/5.jpeg' },
       { id: 2, category: 'Décoration', label: 'Table d\'honneur', src: '/assets/gallery/1.jpeg' },
       { id: 1, category: 'Cérémonie', label: 'Échange de voeux', src: '/assets/gallery/1.jpeg' },
     ],
     // Colonne 3 - Du haut vers le bas (comme colonne 1 mais décalée)
     [
-      { id: 3, category: 'Couple', label: 'Séance photo', src: '/assets/gallery/1.jpeg' },
+      { id: 3, category: 'Couple', label: 'Séance photo', src: '/assets/gallery/5.jpeg' },
       { id: 4, category: 'Fleurs', label: 'Bouquet de mariée', src: '/assets/gallery/1.jpeg' },
       { id: 5, category: 'Lieu', label: 'Salle de réception', src: '/assets/gallery/1.jpeg' },
       { id: 6, category: 'Gastronomie', label: 'Dîner de gala', src: '/assets/gallery/1.jpeg' },
-      { id: 1, category: 'Cérémonie', label: 'Échange de voeux', src: '/assets/gallery/1.jpeg' },
+      { id: 1, category: 'Cérémonie', label: 'Échange de voeux', src: '/assets/gallery/2.jpeg' },
       { id: 2, category: 'Décoration', label: 'Table d\'honneur', src: '/assets/gallery/1.jpeg' },
       // Duplication pour la boucle infinie
-      { id: 3, category: 'Couple', label: 'Séance photo', src: '/assets/gallery/1.jpeg' },
+      { id: 3, category: 'Couple', label: 'Séance photo', src: '/assets/gallery/5.jpeg' },
       { id: 4, category: 'Fleurs', label: 'Bouquet de mariée', src: '/assets/gallery/1.jpeg' },
       { id: 5, category: 'Lieu', label: 'Salle de réception', src: '/assets/gallery/1.jpeg' },
       { id: 6, category: 'Gastronomie', label: 'Dîner de gala', src: '/assets/gallery/1.jpeg' },
