@@ -6,7 +6,7 @@ const Hero = () => {
       {/* Background Image Full Screen */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/assets/hero.jpg"
+          src="https://imgs.search.brave.com/jjGNFQTm0yX4gf8pQqUsYixpBnriDiI2FpIuNKHEYDM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMudm9ndWUuY29t/L3Bob3Rvcy82NjI3/OWQ3NDNjNjMwMTM4/NTBiMjMyNTcvNDoz/L3dfMTYwMCxjX2xp/bWl0L1JhY2hhZWxN/aWNoYWVsX1h0cmFf/JTIwNi5qcGc"
           alt="Mariage de rêve"
           className="w-full h-full object-cover"
           loading="eager"
