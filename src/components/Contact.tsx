@@ -14,7 +14,7 @@ const Contact = () => {
   const [showToast, setShowToast] = useState(false);
 
   const contactInfo = [
-    { icon: Mail, label: 'Email', value: 'contact@joyfullwedding.com', link: 'mailto:contact@joyfullwedding.com' },
+    { icon: Mail, label: 'Email', value: 'contact@everafterevents.com', link: 'mailto:contact@everafterevents.com' },
     { icon: Phone, label: 'Téléphone', value: '+229 01 74 85 63 41', link: 'tel:+2290174856341' },
     { icon: MapPin, label: 'Adresse', value: 'Porto-Novo, Bénin', link: '#' },
     { icon: Clock, label: 'Horaires', value: 'Lundi à Samedi : 08h - 21h', link: '#' },

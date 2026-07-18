@@ -64,17 +64,17 @@ const Navbar = () => {
             }`}>
               <img
                 src="logo-wedding.png"
-                alt="JoyfullWedding Logo"
+                alt="Ever After Events Logo"
                 className="w-full h-full object-cover"
               />
             </div>
             <span className="text-xl font-light tracking-tight">
               <span className={`font-serif transition-colors duration-300 ${
                 scrolled || isOpen ? 'text-rose-600' : 'text-white'
-              }`}>Joyfull</span>
+              }`}> Ever After</span> 
               <span className={`transition-colors duration-300 ${
                 scrolled || isOpen ? 'text-rose-400' : 'text-white/90'
-              }`}>Wedding</span>
+              }`}>Events</span>
             </span>
           </a>
 

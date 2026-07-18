@@ -10,7 +10,7 @@ const About = () => {
             <div className="aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl shadow-rose-500/10 relative h-[450px] sm:h-[550px] lg:h-[700px]">
               <img
                 src="/assets/about.jpeg"
-                alt="Équipe de JoyfullWedding"
+                alt="Équipe de Ever After Events"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
@@ -42,7 +42,7 @@ const About = () => {
 
               <div className="space-y-3 sm:space-y-4 text-gray-600">
                 <p className="text-base sm:text-lg leading-relaxed font-light">
-                  Chez <span className="font-semibold text-rose-500">JoyfullWedding</span>, nous croyons que chaque mariage est une œuvre d'art unique. Notre approche allie le raffinement de la haute couture à une logistique impeccable.
+                  Chez <span className="font-semibold text-rose-500">Ever After Events</span>, nous croyons que chaque mariage est une œuvre d'art unique. Notre approche allie le raffinement de la haute couture à une logistique impeccable.
                 </p>
                 <p className="text-base sm:text-lg leading-relaxed font-light">
                   Nous ne nous contentons pas de planifier des événements ; nous créons des souvenirs qui traversent le temps. Notre équipe dédiée s'occupe de chaque aspect technique pour vous permettre de vivre pleinement chaque instant de votre union.
