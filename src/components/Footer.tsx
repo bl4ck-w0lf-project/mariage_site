@@ -1,4 +1,4 @@
-import { Sparkles, Heart, Mail, Phone, MapPin, Clock } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -53,21 +53,25 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid md:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12 items-start">
           {/* Brand */}
-          <div className="space-y-6">
-            <div className="flex items-center gap-2">
-              <Sparkles className="w-8 h-8 text-rose-500" />
-              <span className="text-2xl font-light tracking-tight text-white">
-                <span className="font-serif text-rose-500">Wedding</span>
-                <span className="text-white">Agency</span>
+          <div className="flex flex-col">
+            <div className="flex items-center gap-2 mb-6 h-12">
+              <img
+                src="/src/assets/logo-wedding.png"
+                alt="Wedding Agency"
+                className="w-12 h-12 object-contain rounded-xl"
+              />
+              <span className="text-2xl font-light tracking-tight text-white leading-none">
+                <span className="font-serif text-rose-500">JoyFull</span>
+                <span className="text-white">Wedding</span>
               </span>
             </div>
             <p className="text-sm leading-relaxed font-light">
               L'art de créer des moments inoubliables. Depuis plus de 12 ans,
               nous orchestrons les plus beaux jours de votre vie.
             </p>
-            <div className="flex gap-4">
+            <div className="flex gap-4 mt-6">
               {socialLinks.map((social) => (
                 <a
                   key={social.label}
@@ -82,8 +86,8 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
-            <h3 className="text-white font-semibold mb-6">Navigation</h3>
+          <div className="flex flex-col">
+            <h3 className="text-white font-semibold mb-6 h-12 flex items-center">Navigation</h3>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.label}>
@@ -98,28 +102,9 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact */}
-          <div>
-            <h3 className="text-white font-semibold mb-6">Contact</h3>
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-rose-500 mt-0.5 flex-shrink-0" />
-                <span className="text-sm font-light">Porto-Novo, Bénin</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <Phone className="w-5 h-5 text-rose-500 mt-0.5 flex-shrink-0" />
-                <span className="text-sm font-light">+229 01 74 85 63 41</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <Mail className="w-5 h-5 text-rose-500 mt-0.5 flex-shrink-0" />
-                <span className="text-sm font-light">contact@joyfullwedding.com</span>
-              </li>
-            </ul>
-          </div>
-
           {/* Horaires */}
-          <div>
-            <h3 className="text-white font-semibold mb-6">Horaires</h3>
+          <div className="flex flex-col">
+            <h3 className="text-white font-semibold mb-6 h-12 flex items-center">Horaires</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <Clock className="w-5 h-5 text-rose-500 mt-0.5 flex-shrink-0" />
@@ -144,15 +129,60 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+
+          {/* Contact & Newsletter */}
+          <div className="flex flex-col">
+            <h3 className="text-white font-semibold mb-6 h-12 flex items-center">Contact</h3>
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3">
+                <MapPin className="w-5 h-5 text-rose-500 mt-0.5 flex-shrink-0" />
+                <span className="text-sm font-light">Porto-Novo, Bénin</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Phone className="w-5 h-5 text-rose-500 mt-0.5 flex-shrink-0" />
+                <span className="text-sm font-light">+229 01 74 85 63 41</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Mail className="w-5 h-5 text-rose-500 mt-0.5 flex-shrink-0" />
+                <span className="text-sm font-light">contact@joyfullwedding.com</span>
+              </li>
+            </ul>
+
+            <div className="mt-8">
+              <h4 className="text-white font-semibold mb-4">Newsletter</h4>
+              <p className="text-sm font-light mb-4">
+                Recevez nos inspirations et conseils pour votre mariage.
+              </p>
+              <form className="flex flex-col gap-3">
+                <input
+                  type="email"
+                  placeholder="Votre email"
+                  className="px-4 py-3 bg-gray-800 border border-gray-700 rounded-xl focus:border-rose-500 focus:ring-2 focus:ring-rose-500/20 outline-none transition-all text-white placeholder-gray-500 w-full"
+                />
+                <button
+                  type="submit"
+                  className="px-6 py-3 bg-rose-500 text-white rounded-xl font-medium hover:bg-rose-600 transition-all duration-300 hover:shadow-lg hover:shadow-rose-500/25"
+                >
+                  S'inscrire
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
           <p className="text-sm font-light">
             © {currentYear} Wedding Agency. Tous droits réservés.
           </p>
           <p className="text-sm font-light flex items-center gap-1">
-            Fait avec <Heart className="w-4 h-4 text-rose-500 fill-rose-500" /> à Porto-Novo
+            Fait par
+            <a
+              href="#"
+              className="text-rose-500 hover:text-rose-400 transition-colors font-medium"
+            >
+              SmartDev
+            </a>
           </p>
         </div>
       </div>

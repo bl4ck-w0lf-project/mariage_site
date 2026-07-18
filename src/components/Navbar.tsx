@@ -32,8 +32,8 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
-          ? 'bg-rose-50/80 backdrop-blur-md border-b border-rose-100/50 shadow-sm'
-          : 'bg-transparent'
+        ? 'bg-rose-50/80 backdrop-blur-md border-b border-rose-100/50 shadow-sm'
+        : 'bg-transparent'
         }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -46,8 +46,8 @@ const Navbar = () => {
                 key={link.label}
                 href={link.href}
                 className={`text-md font-bold tracking-wide transition-colors duration-300 ${scrolled
-                    ? 'text-rose-600 hover:text-rose-800'
-                    : 'text-white/90 hover:text-white'
+                  ? 'text-rose-600 hover:text-rose-800'
+                  : 'text-white/90 hover:text-white'
                   }`}
               >
                 {link.label}
@@ -80,8 +80,8 @@ const Navbar = () => {
                 key={link.label}
                 href={link.href}
                 className={`text-sm font-bold tracking-wide transition-colors duration-300 ${scrolled
-                    ? 'text-rose-600 hover:text-rose-800'
-                    : 'text-white/90 hover:text-white'
+                  ? 'text-rose-600 hover:text-rose-800'
+                  : 'text-white/90 hover:text-white'
                   }`}
               >
                 {link.label}
@@ -113,8 +113,8 @@ const Navbar = () => {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className={`md:hidden py-4 backdrop-blur-lg transition-all duration-500 ${scrolled
-              ? 'border-t border-rose-100 bg-rose-50/95'
-              : 'border-t border-white/10 bg-black/90'
+            ? 'border-t border-rose-100 bg-rose-50/95'
+            : 'border-t border-white/10 bg-black/90'
             }`}>
             <div className="flex flex-col gap-3 px-4">
               {[...leftLinks, ...rightLinks].map((link) => (
@@ -122,8 +122,8 @@ const Navbar = () => {
                   key={link.label}
                   href={link.href}
                   className={`px-4 py-2.5 rounded-lg transition-all duration-300 text-center ${scrolled
-                      ? 'text-rose-600 hover:text-rose-800 hover:bg-rose-100'
-                      : 'text-white/80 hover:text-white hover:bg-white/10'
+                    ? 'text-rose-600 hover:text-rose-800 hover:bg-rose-100'
+                    : 'text-white/80 hover:text-white hover:bg-white/10'
                     }`}
                   onClick={() => setIsOpen(false)}
                 >
