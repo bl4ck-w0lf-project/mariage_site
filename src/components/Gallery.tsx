@@ -19,7 +19,7 @@ const Gallery = () => {
       { id: 5, category: 'Lieu', label: 'Salle de réception', src: '/assets/gallery/1.jpeg' },
       { id: 6, category: 'Gastronomie', label: 'Dîner de gala', src: '/assets/gallery/1.jpeg' },
     ],
-    // Colonne 2 - Du bas vers le haut (ordre inversé)
+    // Colonne 2 - Du bas  vers le haut (ordre inversé)
     [
       { id: 6, category: 'Gastronomie', label: 'Dîner de gala', src: '/assets/gallery/1.jpeg' },
       { id: 5, category: 'Lieu', label: 'Salle de réception', src: '/assets/gallery/4.jpeg' },
