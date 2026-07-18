@@ -73,7 +73,7 @@ const Testimonials = () => {
           <div className="absolute left-0 top-0 z-10 w-24 h-full bg-gradient-to-r from-white to-transparent pointer-events-none"></div>
           {/* Overlay dégradé droite */}
           <div className="absolute right-0 top-0 z-10 w-24 h-full bg-gradient-to-l from-white to-transparent pointer-events-none"></div>
-          
+
           <div className="flex gap-6 animate-scroll-left py-4">
             {duplicatedTestimonials.map((testimonial, idx) => (
               <div
@@ -114,7 +114,7 @@ const Testimonials = () => {
           <div className="absolute left-0 top-0 z-10 w-24 h-full bg-gradient-to-r from-white to-transparent pointer-events-none"></div>
           {/* Overlay dégradé droite */}
           <div className="absolute right-0 top-0 z-10 w-24 h-full bg-gradient-to-l from-white to-transparent pointer-events-none"></div>
-          
+
           <div className="flex gap-6 animate-scroll-right py-4">
             {duplicatedTestimonials.map((testimonial, idx) => (
               <div
@@ -171,12 +171,12 @@ const Testimonials = () => {
         }
 
         .animate-scroll-left {
-          animation: scrollLeft 80s linear infinite;
+          animation: scrollLeft 25s linear infinite;
           will-change: transform;
         }
 
         .animate-scroll-right {
-          animation: scrollRight 50s linear infinite;
+          animation: scrollRight 20s linear infinite;
           will-change: transform;
         }
 
