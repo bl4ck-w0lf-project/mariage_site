@@ -1,0 +1,115 @@
+# Joyfull Wedding
+
+## Project
+
+Joyfull Wedding est un site vitrine premium développé pour une agence spécialisée dans l'organisation de mariages.
+
+L'objectif est de présenter les services de l'agence, inspirer confiance, valoriser les réalisations et inciter les visiteurs à prendre contact.
+
+---
+
+## Tech Stack
+
+- React.js
+- TypeScript
+- Vite
+- Tailwind CSS
+- Lucide React
+- Responsive Design
+- Mobile First
+
+---
+
+## Design Principles
+
+- Premium UI
+- Elegant
+- Minimalist
+- Luxury
+- Smooth Animations
+- High Conversion
+- Excellent UX
+- Accessibility
+- Performance
+
+---
+
+## Sections
+
+1. Hero
+2. About
+3. Services
+4. Gallery
+5. Testimonials
+6. Contact
+7. Footer
+
+---
+
+## Components
+
+src/components/
+
+- Navbar.tsx
+- Hero.tsx
+- About.tsx
+- Services.tsx
+- Gallery.tsx
+- Testimonials.tsx
+- Contact.tsx
+- Footer.tsx
+
+---
+
+## Assets
+
+Images are located inside:
+
+public/assets/
+
+including:
+
+- hero
+- about
+- gallery
+- testimonials
+- logo
+- icons
+
+---
+
+## Coding Guidelines
+
+- Functional Components
+- Strict TypeScript
+- Reusable Components
+- Clean Architecture
+- Maintainable Code
+- Semantic HTML
+- Accessible UI
+- Optimized Performance
+- No UI Framework except Tailwind CSS
+- Lucide React for icons
+- SVG for custom illustrations
+
+---
+
+## UI/UX
+
+Every section must:
+
+- be responsive
+- have smooth transitions
+- respect visual hierarchy
+- maintain consistent spacing
+- use premium typography
+- include subtle animations
+- keep accessibility in mind
+
+---
+
+## Objective
+
+Create a premium wedding agency website that inspires elegance, emotion, trust and maximizes contact requests.
+
+The project follows modern React best practices and focuses on performance, scalability and maintainability.
