@@ -170,7 +170,7 @@ const Services = () => {
                   {/* Numéro + Icône avant le chiffre */}
                   <div className="flex items-center gap-3 mb-3">
                     <div className="flex items-center gap-[50px]">
-                      <div className="w-15 h-15 rounded-xl bg-rose-50 text-rose-500 flex items-center justify-center group-hover:bg-rose-500 group-hover:text-white transition-all duration-300">
+                      <div className="w-15 h-15 rounded-full bg-rose-50 text-rose-500 flex items-center justify-center group-hover:bg-rose-500 group-hover:text-white transition-all duration-300">
                         <step.icon className="w-7 h-7" />
                       </div>
                       <span className="text-[55px] font-syne font-bold text-rose-100/50 group-hover:text-rose-200/70 transition-colors duration-300">
