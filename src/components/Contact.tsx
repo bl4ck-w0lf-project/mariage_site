@@ -145,8 +145,8 @@ const Contact = () => {
                 type="submit"
                 disabled={isSubmitting}
                 className={`w-full px-8 py-4 bg-rose-500 text-white rounded-xl font-medium transition-all duration-300 flex items-center justify-center gap-3 group ${isSubmitting
-                    ? 'opacity-70 cursor-not-allowed'
-                    : 'hover:bg-rose-600 hover:shadow-xl hover:shadow-rose-500/25'
+                  ? 'opacity-70 cursor-not-allowed'
+                  : 'hover:bg-rose-600 hover:shadow-xl hover:shadow-rose-500/25'
                   }`}
               >
                 {isSubmitting ? (
@@ -234,7 +234,7 @@ const Contact = () => {
                   <div className="flex items-start justify-between">
                     <div>
                       <h4 className="text-lg font-outfit font-semibold text-gray-900">
-                        Message envoyé ! ✨
+                        Message envoyé !!!
                       </h4>
                       <p className="text-sm text-gray-600 mt-1 font-light leading-relaxed">
                         Votre message a bien été reçu. Nous vous répondrons dans les meilleurs délais.
