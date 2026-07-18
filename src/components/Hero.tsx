@@ -6,7 +6,7 @@ const Hero = () => {
       {/* Background Image Full Screen */}
       <div className="absolute inset-0 z-0">
         <img
-          src="../public/assets/logo-wedding.png"
+          src="/assets/hero.jpg"
           alt="Mariage de rêve"
           className="w-full h-full object-cover"
           loading="eager"
