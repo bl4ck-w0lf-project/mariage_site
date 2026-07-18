@@ -48,12 +48,15 @@ const About = () => {
           {/* Contenu droit */}
           <div className="space-y-10">
             <div className="space-y-6">
+              {/* Label Notre Mission - Style identique à Services */}
               <span className="text-rose-500 font-medium tracking-[0.2em] uppercase text-sm flex items-center gap-3">
-                <span className="w-10 h-px bg-rose-500"></span>
+                <span className="text-rose-500 text-lg">✦</span>
                 Notre Mission
+                <span className="text-rose-500 text-lg">✦</span>
               </span>
 
-              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-light tracking-tight leading-tight">
+              {/* Titre - Style identique à Services */}
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-outfit font-bold tracking-tight leading-tight">
                 Inspirer la confiance,
                 <span className="block font-serif text-rose-500 mt-2">créer du rêve.</span>
               </h2>

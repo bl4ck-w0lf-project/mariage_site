@@ -95,52 +95,44 @@ Le développement est réalisé progressivement à partir de maquettes UI intég
 ```text
 
 wedding-site/
-
-│
-
-├── public/
-
-│   ├── favicon.svg
-
-│   └── icons.svg
-
-│
-
-├── src/
-
-│   ├── assets/
-
-│   │   ├── hero.png
-
-│   │   ├── react.svg
-
-│   │   └── vite.svg
-
-│   │
-
-│   ├── App.tsx
-
-│   ├── App.css
-
-│   ├── index.css
-
-│   └── main.tsx
-
-│
-
+.
 ├── eslint.config.js
-
+├── .gitignore
+├── index.html
 ├── package.json
-
-├── tsconfig.json
-
+├── package-lock.json
+├── postcss.config.js
+├── public
+│   └── logo-wedding.png
+├── README.md
+├── src
+│   ├── App.css
+│   ├── App.tsx
+│   ├── assets
+│   │   ├── about.jpeg
+│   │   ├── gallery
+│   │   │   └── 1.jpeg
+│   │   ├── hero.jpg
+│   │   ├── icon.png
+│   │   ├── logo-wedding.png
+│   │   └── testimonial-1.jpeg
+│   ├── components
+│   │   ├── About.tsx
+│   │   ├── Contact.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Gallery.tsx
+│   │   ├── Hero.tsx
+│   │   ├── Navbar.tsx
+│   │   ├── Services.tsx
+│   │   └── Testimonials.tsx
+│   ├── index.css
+│   └── main.tsx
+├── tailwind.config.js
 ├── tsconfig.app.json
-
+├── tsconfig.json
 ├── tsconfig.node.json
+└── vite.config.ts
 
-├── vite.config.ts
-
-└── README.md
 
 ```
 
