@@ -22,27 +22,6 @@ const About = () => {
                 « L'art du détail »
               </span>
             </div>
-
-            {/* Badge en bas à droite - SUR l'image */}
-            <div className="absolute bottom-[-15px] right-[10px] sm:bottom-[-35px] sm:right-[15px] bg-white/95 backdrop-blur-sm p-3 sm:p-5 rounded-2xl shadow-xl border border-gray-100/50 min-w-[120px] sm:min-w-[160px]">
-              <div className="flex items-center gap-3 sm:gap-4">
-                <div className="relative">
-                  <div className="w-10 h-10 sm:w-14 sm:h-14 bg-gradient-to-br from-rose-100 to-rose-50 rounded-2xl flex items-center justify-center shadow-inner">
-                    <Heart className="w-5 h-5 sm:w-7 sm:h-7 text-rose-500 fill-rose-500/20" />
-                  </div>
-                  <div className="absolute -top-1 -right-1 w-3 h-3 sm:w-4 sm:h-4 bg-rose-500 rounded-full opacity-20"></div>
-                </div>
-                <div>
-                  <div className="text-xl sm:text-2xl font-semibold text-gray-900 leading-none">98%</div>
-                  <div className="text-xs sm:text-sm text-gray-500 font-light tracking-wide">Clients satisfaits</div>
-                  <div className="flex gap-0.5 mt-1">
-                    {[...Array(5)].map((_, i) => (
-                      <span key={i} className="text-amber-400 text-[10px] sm:text-xs">★</span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* Contenu droit */}
