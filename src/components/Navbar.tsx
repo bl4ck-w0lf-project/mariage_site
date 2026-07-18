@@ -60,7 +60,7 @@ const Navbar = () => {
             <div className={`w-12 h-12 rounded-xl overflow-hidden shadow-sm transition-all duration-500 ${scrolled ? 'border border-rose-200' : 'border border-white/20'
               }`}>
               <img
-                src="/assets/logo-wedding.png"
+                src="logo-wedding.png"
                 alt="JoyfullWedding Logo"
                 className="w-full h-full object-cover"
               />
